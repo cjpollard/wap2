@@ -25,7 +25,7 @@ gulp.task('ts', function() {
         .pipe(sourcemaps.init())
         .pipe(ts(tsConfig.compilerOptions))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('.'));
+        .pipe(gulp.dest('app/'));
 });
 
 gulp.task('sass', function() {
