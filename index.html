@@ -14,20 +14,12 @@
     <script src="lib/system.src.js"></script>
     <script src="lib/Rx.js"></script>
     <script src="lib/angular2.dev.js"></script>
+    <script src="lib/router.dev.js"></script>
+    <script src="lib/http.dev.js"></script>
 
     <!-- 2. Configure SystemJS -->
-    <script>
-      System.config({
-        packages: {
-          app: {
-            format: 'register',
-            defaultExtension: 'js'
-          }
-        }
-      });
-      System.import('app/main.js')
-            .then(null, console.error.bind(console));
-    </script>
+    <script src="app/app.bundle.js"></script>
+    <base href="/">
   </head>
 
   <!-- 3. Display the application -->
